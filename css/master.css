@@ -7,14 +7,43 @@ body{
   background-color: grey;
 
 }
+/*HEADER*/
 header{
   background-color: #262626;
   width: 80%;
   height: 80px;
   float: right;
 }
+#upgrade{
+  background-color: #262626;
+  color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 5px;
+  float: right;
+  margin-top: 10px;
+  font-size: 10px;
+}
+/*MAIN*/
+/*black box*/
 #spotify-black-box{
   background-color: black;
   width: 20%;
   height: 100vh;
+}
+#spotify-logo{
+  width: 180px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+#home-logo{
+  width: 50px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+#spotify-black-box p{
+  color: white;
+  display: inline-block;
+  padding-left: 10px;
+  padding-top: -10px;
 }
