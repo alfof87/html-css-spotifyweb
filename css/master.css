@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body{
-  background-color: grey;
+  background-color: #333333;
   font-family: Lucida Console;
 }
 
@@ -32,7 +32,7 @@ header{
 #spotify-black-box{
   background-color: black;
   width: 200px;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   z-index: 150;
 
@@ -42,25 +42,92 @@ header{
   padding-left: 20px;
   padding-top: 10px;
 }
-#home-logo{
-  width: 50px;
+.logos{
+  width: 40px;
   padding-left: 20px;
   padding-top: 10px;
 }
 #spotify-black-box p{
-  color: white;
+  color: #737373;
   display: inline-block;
   padding-left: 10px;
+  transform: translate(0, -5px);
 }
-/*playlist centrale*/
-#playlist{
+#spotify-black-box h4{
+  color: white;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+#spotify-black-box i{
+  color: #737373;
+  font-size: 40px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+#spotify-black-box ul li{
+  padding-left: 10px;
+  padding-top: 20px;
+}
+/*playlist menu*/
+#playlist-menu{
   width: calc(100% - 200px);
   float: left;
   margin-top: 80px;
   margin-left: 600px;
+  height: 100%;
 }
-#playlist ul li{
+#playlist-menu ul li{
   display: inline-block;
   font-size: 10px;
   color: white;
+}
+/*playlist iniziale*/
+.titolo{
+  color: white;
+  padding-top: 150px;
+  margin-left: 250px;
+}
+.playlist-iniziale, .playlist-centrale, .playlist-finale{
+  display: flex;
+  float: left;
+  padding-top: 15px;
+  margin-left: 250px;
+  width: 100%;
+}
+.playlist-iniziale img, .playlist-centrale img, .playlist-finale img{
+  width: 200px;
+}
+.img-playlist{
+  justify-content: space-between;
+}
+.img-playlist h4{
+  color: white;
+  font-size: 13px;
+  text-align: center;
+}
+.img-playlist p{
+  color: #737373;
+  font-size: 10px;
+  text-align: center;
+}
+/*playlist centrale*/
+.titolo-centrale p{
+  color: #737373;
+  font-size: 10px;
+}
+.titolo-centrale{
+  color: white;
+  margin-top: 250px;
+  margin-left: 250px;
+}
+.playlist-centrale{
+  display: flex;
+}
+
+/*playlist finale*/
+.playlist-finale{
+ display: flex;
+}
+.playlist-finale img{
+  border-radius: 50%;
 }
