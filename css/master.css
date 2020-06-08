@@ -32,10 +32,21 @@ header{
 #spotify-black-box{
   background-color: black;
   width: 200px;
-  height: 100%;
+  height: 800px;
   position: fixed;
   z-index: 150;
+  display: flex;
+  flex-direction: column;
+}
+.flex-item-black{
+ align-content: flex-end;
+}
 
+#riga{
+  width: 150px;
+  border-bottom: 2px solid white;
+  margin: 0 auto;
+  padding-top: 10px;
 }
 #spotify-logo{
   width: 150px;
@@ -98,7 +109,7 @@ header{
   width: 200px;
 }
 .img-playlist{
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 .img-playlist h4{
   color: white;
