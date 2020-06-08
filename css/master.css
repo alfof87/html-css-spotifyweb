@@ -40,9 +40,6 @@ main{
   height: 1000px;
   position: fixed;
   z-index: 130;
-
-
-
 }
 .flex-item-black{
 
@@ -170,7 +167,10 @@ background-color: #404040;
 position: fixed;
 z-index: 150;
 display: flex;
+justify-content: space-between;
+align-items: center;
 }
+
 #footer-player img{
   width: 50px;
 }
@@ -192,4 +192,27 @@ h6{
 #icon i{
 padding-right: 20px;
 color: #737373;
+}
+#barra{
+  width: 400px;
+  border-bottom: 3px solid white;
+  display: inline-block;
+}
+.player-icon{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+.player-icon i{
+  margin-left: 10px;
+}
+#volume{
+  width: 100px;
+  border-bottom: 3px solid white;
+  display: inline-block;
+}
+.volume-icon i{
+  color: white;
+  font-size: 12px;
+  padding-left: 10px;
 }
