@@ -121,6 +121,7 @@ header{
   font-size: 10px;
   text-align: center;
 }
+
 /*playlist centrale*/
 .titolo-centrale p{
   color: #737373;
@@ -130,6 +131,7 @@ header{
   color: white;
   margin-top: 250px;
   margin-left: 250px;
+  padding-top: 50px;
 }
 .playlist-centrale{
   display: flex;
@@ -141,4 +143,11 @@ header{
 }
 .playlist-finale img{
   border-radius: 50%;
+}
+/*footer-player*/
+#footer-player{
+  width: 100%;
+  height: 100px;
+  background-color: grey;
+  float: right;
 }
