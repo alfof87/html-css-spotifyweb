@@ -109,7 +109,7 @@ header{
   width: 200px;
 }
 .img-playlist{
-  justify-content: flex-end;
+  justify-content: space-around;
 }
 .img-playlist h4{
   color: white;
