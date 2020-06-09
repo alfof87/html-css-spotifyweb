@@ -7,9 +7,13 @@ body{
   background-color: #080812;
   font-family: Lucida Console;
   height: 100%;
-
 }
-
+/*body img{
+  transition: 2s;
+}
+body img:hover{
+  background-image: url(https://icon2.cleanpng.com/20180320/oaq/kisspng-computer-icons-youtube-play-button-clip-art-icon-png-play-button-5ab1113388a855.8771330715215537155598.jpg);
+}*/
 /*HEADER*/
 header{
   background-color: #262626;
@@ -35,10 +39,15 @@ main{
   height: 100vh;
 }
 /*black box*/
+@media all and (max-width: 767px) {
+  #spotify-black-box p, h4, li{
+    display: none;
+  }
+}
 #spotify-black-box{
   background-color: black;
   width: 200px;
-  height: 1000px;
+  height: 100%;
   position: fixed;
   z-index: 130;
   float: left;
@@ -86,12 +95,14 @@ main{
   padding-left: 10px;
   padding-top: 20px;
 }
+
 /*playlist menu*/
 #playlist-menu{
   width: calc(100% - 200px);
   margin-top: 80px;
   margin-bottom: 50px;
-  
+  display: flex;
+  justify-content: center;
 }
 #playlist-menu ul li{
   display: inline-block;
@@ -99,21 +110,21 @@ main{
   color: white;
 }
 /*playlist iniziale*/
+@media all and (max-width: 992px) {
+  .playlist-iniziale{
+  flex-wrap: wrap;
+  }
+}
 .titolo{
   color: white;
-
-
 }
 .playlist-iniziale, .playlist-centrale, .playlist-finale{
   display: flex;
-
   padding-top: 15px;
-
-
 }
 .playlist-iniziale{
   width: calc(100% - 200px);
-  flex-wrap: wrap;
+
   justify-content: space-around;
 }
 .playlist-iniziale img, .playlist-centrale img, .playlist-finale img{
