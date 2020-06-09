@@ -9,6 +9,7 @@ body{
   height: 100%;
 }
 
+
 /*HEADER*/
 header{
   background-color: #262626;
@@ -29,12 +30,15 @@ header{
   margin-top: 10px;
   font-size: 10px;
 }
+#upgrade:hover{
+  width: 10%;
+  height: 30%;
+}
 /*MAIN*/
 main{
   height: 100vh;
 }
 /*black box*/
-
 #spotify-black-box{
   background-color: black;
   width: 200px;
@@ -73,6 +77,9 @@ main{
   padding-left: 10px;
   transform: translate(0, -5px);
 }
+#spotify-black-box p:hover{
+  color: white;
+}
 #spotify-black-box h4{
   color: white;
   padding-left: 20px;
@@ -96,9 +103,10 @@ main{
 }
 .scrollbar{
   width: 200px;
-  height: 110px;
+  height: 150px;
   overflow: scroll;
 }
+
 
 @media all and (max-width: 767px) {
   #spotify-black-box p, h4, #spotify-logo{
@@ -121,7 +129,12 @@ main{
 #playlist-menu ul li{
   display: inline-block;
   font-size: 10px;
+  color: #737373;
+}
+#playlist-menu ul li:hover{
   color: white;
+  text-decoration: underline;
+  text-decoration-color: #7FFF00;
 }
 /*playlist iniziale*/
 @media all and (max-width: 992px) {
@@ -263,4 +276,10 @@ color: #737373;
  .player-icon i{
    width: 15px;
  }
+}
+#icon i:hover{
+  color: white;
+}
+#barra:hover{
+  border-bottom: 3px solid #7FFF00;
 }
