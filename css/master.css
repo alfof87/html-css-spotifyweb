@@ -8,12 +8,7 @@ body{
   font-family: Lucida Console;
   height: 100%;
 }
-/*body img{
-  transition: 2s;
-}
-body img:hover{
-  background-image: url(https://icon2.cleanpng.com/20180320/oaq/kisspng-computer-icons-youtube-play-button-clip-art-icon-png-play-button-5ab1113388a855.8771330715215537155598.jpg);
-}*/
+
 /*HEADER*/
 header{
   background-color: #262626;
@@ -85,7 +80,7 @@ main{
 }
 #spotify-black-box i{
   color: #737373;
-  font-size: 40px;
+  font-size: 30px;
   padding-left: 20px;
   padding-top: 10px;
 }
@@ -98,7 +93,10 @@ main{
   height: calc(100% - 500px);
   display: flex;
   align-items: flex-end;
+}
 
+.scrollbar::-webkit-scrollbar {   /*SCROLLBAR PROVA*/
+  width: 10px;
 }
 @media all and (max-width: 767px) {
   #spotify-black-box p, h4, #spotify-logo{
@@ -145,7 +143,9 @@ main{
 .playlist-iniziale img, .playlist-centrale img, .playlist-finale img{
   width: 150px;
 }
-
+.img-playlist:hover{
+  opacity: 0.3;
+}
 .img-playlist h4{
   color: white;
   font-size: 10px;
