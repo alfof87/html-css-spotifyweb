@@ -90,7 +90,7 @@ main{
 }
 .flex-item-black{
   width: 200px;
-  height: calc(100% - 430px);
+  height: 200px;
   display: flex;
   align-items: flex-end;
 }
