@@ -105,8 +105,8 @@ main{
   padding-bottom: 150px;
 }
 @media all and (max-width: 767px) {
-  .flex-item-black p{
-   display: none;
+  .fa-user-circle {
+   display: block;
   }
 }
 /*playlist menu*/
