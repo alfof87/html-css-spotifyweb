@@ -32,7 +32,6 @@ header{
 }
 #upgrade:hover{
   width: 10%;
-  height: 30%;
 }
 /*MAIN*/
 main{
@@ -142,7 +141,11 @@ main{
   flex-wrap: wrap;
   }
 }
-
+@media all and (max-width: 767px) {
+  .playlist-iniziale{
+  
+  }
+}
 .titolo{
   color: white;
 }
