@@ -35,13 +35,22 @@ header{
 }
 /*MAIN*/
 main{
-  height: 100vh;
+  height: 100%;
 }
 /*black box*/
+@media all and (max-width: 767px) {
+  #spotify-black-box{
+    max-width: 80px;
+  }
+  #riga{
+    display: none;
+  }
+
+}
 #spotify-black-box{
   background-color: black;
   width: 200px;
-  height: 100%;
+  height: calc(100% - 80px);
   position: fixed;
   z-index: 130;
   float: left;
@@ -49,11 +58,6 @@ main{
   display: flex;
   flex-direction: column;
 }
-.blocco-due{
-  float: left;
-}
-
-
 #riga{
   width: 150px;
   border-bottom: 2px solid white;
@@ -96,7 +100,7 @@ main{
 }
 .flex-item-black{
   width: 200px;
-  height: 200px;
+  height: 100%;
   display: flex;
   align-items: flex-end;
 }
@@ -104,7 +108,7 @@ main{
   width: 200px;
   height: 150px;
   overflow: scroll;
-  
+
 }
 
 
@@ -115,7 +119,7 @@ main{
 }
 
 #spotify-black-box p{
-  font-size: 10px;
+  font-size: 12px;
 }
 
 /*playlist menu*/
@@ -128,7 +132,7 @@ main{
 }
 #playlist-menu ul li{
   display: inline-block;
-  font-size: 10px;
+  font-size: 12px;
   color: #737373;
 }
 #playlist-menu ul li:hover{
@@ -136,6 +140,12 @@ main{
   text-decoration: underline;
   text-decoration-color: #7FFF00;
 }
+/*BLOCCO DUE*/
+#blocco-due{
+
+}
+
+
 /*playlist iniziale*/
 @media all and (max-width: 992px) {
   .playlist-iniziale{
@@ -147,32 +157,33 @@ main{
 
   }
 }
+
 .titolo{
   color: white;
+
 }
 .playlist-iniziale, .playlist-centrale, .playlist-finale{
   display: flex;
   padding-top: 15px;
+
 }
 .playlist-iniziale{
-  width: calc(100% - 200px);
-
-  justify-content: space-around;
+justify-content: flex-end;
 }
 .playlist-iniziale img, .playlist-centrale img, .playlist-finale img{
-  width: 150px;
+  width: 180px;
 }
 .img-playlist:hover{
   opacity: 0.3;
 }
 .img-playlist h4{
   color: white;
-  font-size: 10px;
+  font-size: 12px;
   text-align: center;
 }
 .img-playlist p{
   color: #737373;
-  font-size: 7px;
+  font-size: 12px;
   text-align: center;
 }
 
@@ -191,9 +202,8 @@ main{
 
 /*central-content*/
 .central-content{
-/*  width: calc(100% - 200px);*/
-margin-left: 250px;
-margin-bottom: 200px;
+width: calc(100% - 200px);
+height: calc(100% - 100px)
 }
 /*playlist finale*/
 .playlist-finale > .img-playlist{
