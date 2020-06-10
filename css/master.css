@@ -173,6 +173,20 @@ justify-content: flex-end;
 .playlist-iniziale img, .playlist-centrale img, .playlist-finale img{
   width: 180px;
 }
+.img-playlist{
+  position: relative;
+}
+.play{
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  right: 40%;
+  top: 30%;
+  display: none;
+}
+.play:hover{
+  display: block;
+}
 .img-playlist:hover{
   opacity: 0.3;
 }
