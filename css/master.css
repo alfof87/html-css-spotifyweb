@@ -120,6 +120,7 @@ main{
 @media all and (max-width: 767px) {
   #blocco-due{
 
+
   }
 
 }
@@ -164,8 +165,8 @@ margin-bottom: 100px;
   }
 }
 @media all and (max-width: 767px) {
-  .playlist-iniziale{
-   width: 700px;
+  #blocco-due{
+   margin-left: 80px;
   }
 }
 
