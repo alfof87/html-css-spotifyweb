@@ -26,7 +26,7 @@ header{
   border: 1px solid white;
   border-radius: 15px;
   padding: 5px;
-  float: right;
+  margin-left: 75%;
   margin-top: 10px;
   font-size: 10px;
 }
@@ -107,15 +107,21 @@ main{
 .scrollbar{
   width: 200px;
   height: 150px;
-  overflow: scroll;
+  overflow: auto;
 
 }
 
 
 @media all and (max-width: 767px) {
-  #spotify-black-box p, h4, #spotify-logo{
+  #spotify-black-box p, h4, #spotify-logo, .scrollbar, .flex-item-black{
     display: none;
   }
+}
+@media all and (max-width: 767px) {
+  #blocco-due{
+
+  }
+
 }
 
 #spotify-black-box p{
@@ -143,9 +149,13 @@ main{
 
 /*BLOCCO DUE*/
 #blocco-due{
-
+width: calc(100% - 200px);
+margin-left: 200px;
+margin-bottom: 100px;
 }
-
+#blocco-due h3, #blocco-due-p{
+  margin-left: 20px;
+}
 
 /*playlist iniziale*/
 @media all and (max-width: 992px) {
@@ -155,22 +165,21 @@ main{
 }
 @media all and (max-width: 767px) {
   .playlist-iniziale{
-
+   width: 700px;
   }
 }
 
 .titolo{
   color: white;
-
 }
 .playlist-iniziale, .playlist-centrale, .playlist-finale{
   display: flex;
   padding-top: 15px;
-  width: calc(100% - 200px);
+  margin-left: 20px;
 }
 
 .playlist-iniziale{
-justify-content: space-around;
+
 }
 .playlist-iniziale img, .playlist-centrale img, .playlist-finale img{
   width: 180px;
@@ -186,10 +195,10 @@ justify-content: space-around;
   top: 30%;
   display: none;
 }
-.play:hover{
+.img-playlist:hover .play{
   display: block;
 }
-.img-playlist:hover{
+.img-playlist:hover img{
   opacity: 0.3;
 }
 .img-playlist h4{
@@ -222,14 +231,14 @@ justify-content: space-around;
 
 }
 /*playlist finale*/
-.playlist-finale > .img-playlist{
-  margin-right: 10px;
-}
+
 .playlist-finale{
  display: flex;
 }
 .playlist-finale img{
   border-radius: 50%;
+  margin-right: 10px;
+  margin-top: 20px;
 }
 /*footer-player*/
 #footer-player{
